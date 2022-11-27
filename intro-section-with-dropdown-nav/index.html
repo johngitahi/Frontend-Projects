@@ -5,14 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;400;700&display=swap" rel="stylesheet"> 
+  <script src="script.js"></script>
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
 
   <nav class="navbar">
     <a href="#"><img src="images/logo.svg"></a>
-    <a href="#features">Features</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="dropbtn()">Features
+        <span><img src="images/icon-arrow-down.svg"></span>
+      </button>
+      <div class="dropdown-content" id="linkDropdown">
+        <a href="#todolist"><i><img src="images/icon-todo.svg"></i>  Todo List</a>
+        <a href="#calendars"><i><img src="images/icon-calendar.svg"></i>  Calendars</a>
+        <a href="#reminders"><i><img src="images/icon-reminders.svg"></i>  Reminders</a>
+        <a href="#planning"><i><img src="images/icon-planning.svg"></i>  Planning</a>
+      </div>
+    </div> 
     <a href="#company">Company</a>
     <a href="#careers">Careers</a>
     <a href="#about">About</a>

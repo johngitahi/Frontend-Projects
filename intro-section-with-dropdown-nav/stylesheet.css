@@ -1,16 +1,61 @@
 .navbar {
     overflow: hidden;
-    background-color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Epilogue', sans-serif;
+    font-size: 14px;
 }
 
 .navbar a {
     float: left;
     text-align: center;
     text-decoration: none;
-    color: hsl(0, 0%, 41%);
-    padding: 5px 5px
+    color: hsl(0, 0%, 8%);
+    padding: 8px 8px;
+    /* font-family: 'Epilogue', sans-serif; */
+    /* font-size: 16px; */
 }
 
 .navbar .right-nav {
     float: right;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0;
+    background-color: inherit;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    z-index: 1;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 20px 0 0 0;
+}
+
+.dropdown-content a {
+    display: block;
+    text-align: center;
+    float: none;
+    color: hsl(0, 0%, 8%);
+    text-decoration: none;
+    padding: 0 0 10px 0;
+    /* font-family: 'Epilogue', sans-serif; */
+    font-size: 14px;
+}
+ 
+.show {
+    display: block;
 }
